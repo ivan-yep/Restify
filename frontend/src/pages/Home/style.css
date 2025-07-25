@@ -1,0 +1,11 @@
+.home-page :is(.modal-header, .modal-body, .modal-footer) {
+	background-color: #F1EEE9;
+}
+
+.home-page .card {
+    height: 55vh;
+}
+
+.home-page .card img {
+    height: 75%;
+}

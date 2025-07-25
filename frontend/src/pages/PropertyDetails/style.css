@@ -1,0 +1,54 @@
+/* Same as Bootstrap's md breakpoint */
+@media only screen and (min-width: 768px) {
+	.property-details-page {
+		/* Larger than Bootstrap's size 5 */
+		margin-left: 4rem;
+		margin-right: 4rem;
+	}
+	/* Want sticky top but with some space above. */
+	.property-details-page #big-scr-reservation {
+		top: 15vh;
+	}
+	/* Image group rounded outer corners */
+	.property-details-page #left-img {
+		border-top-left-radius: 7px;
+		border-bottom-left-radius: 7px;
+	}
+	.property-details-page #right-img {
+		border-top-right-radius: 7px;
+		border-bottom-right-radius: 7px;
+	}
+	.property-details-page #main-images {
+		height: 70vh;
+	}
+	.property-details-page :is(#left-img, #right-img) {
+		height: 100%;
+	}
+}
+.property-details-page :is(.modal-header, .modal-body, .modal-footer) {
+	background-color: #F1EEE9;
+}
+.property-details-page #images :is(.modal-header, .modal-body, .modal-footer) {
+	background-color: rgb(2, 5, 31);
+	/* background-color: rgb(23, 19, 41); */
+	color: whitesmoke;
+}
+.property-details-page #images .btn-close {
+	border-style: solid;
+	border-width: 5px;
+	border-color: whitesmoke;
+	background-color: whitesmoke;
+}
+.property-details-page #gallery-carousel .carousel-item {
+	height: 90vh;
+}
+.property-details-page #gallery-carousel .carousel-item img {
+	max-height: 100%;
+	width: auto;
+	object-fit: contain;
+	object-position: center;
+}
+
+.property-details-page select option {
+	background-color: rgb(211, 195, 195);
+}

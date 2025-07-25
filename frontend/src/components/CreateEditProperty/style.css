@@ -1,0 +1,142 @@
+/* PAGE SPECIFIC STYLING */
+.property-form .bedbathguests {
+    display: grid;
+    grid-auto-columns: 3fr 3fr 3fr 1fr;
+    column-gap: 20px;
+}
+
+.property-form .startendprice {
+    display: grid;
+    grid-auto-columns: 3fr 3fr 3fr 1fr;
+    column-gap: 20px;
+}
+
+.property-form#startendpricetwo {
+    display: none;
+    grid-auto-columns: 3fr 3fr 3fr 1fr;
+    grid-template-areas:
+        'start end price cancel';
+    column-gap: 20px;
+}
+
+.property-form .remove-button {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+.property-form form {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid rgba(21, 19, 60, 0.7);
+    border-radius: 20px;
+}
+
+.property-form .amenities-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.property-form .amenities-list-col {
+    margin-right: 5rem;
+}
+
+.property-form .error {
+    font-style: italic;
+    font-weight: bold;
+    color: #D7504D;
+}
+
+.property-form #price-input {
+    margin: 0rem !important;
+}
+
+.property-form .additional-buttons {
+    margin-left: 1rem;
+}
+
+.property-form .additional-buttons button {
+    margin-right: 1rem;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.property-form .container {
+    position: relative;
+    width: 50%;
+}
+
+/* Make the image responsive */
+.property-form .container img {
+    width: 100%;
+    height: auto;
+}
+
+.property-form .current-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.property-form .current-images .card {
+    margin-right: 10px;
+    background-color: #F1EEE9;
+    border: none;
+}
+
+.property-form .current-images .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+} 
+
+
+/* Style the button and place it in the middle of the container/image */
+.property-form .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.property-form .container .btn:hover {
+    background-color: black;
+}
+
+@media screen and (max-width: 590px) {
+    .property-form .amenities-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .property-form .bedbathguests {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .property-form .startendprice {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .property-form #startendpricetwo {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .property-form .remove-button {
+        align-self: flex-start;
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,67 @@
+/* PAGE SPECIFIC STYLING */
+/* Card styling */
+.my-properties .card {
+    width: 25rem;
+    margin: 1rem;
+    border-radius: 6%;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+}
+
+.my-properties .card:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+}
+
+.my-properties .rental-properties {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.my-properties .create-card {
+    display: flex;
+    width: 400px;
+    height: 460px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bebebe;
+}
+
+.my-properties .property-card-bed-bath-guest-grid {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.my-properties .property-card-bed-bath-guest-grid>div {
+    padding-right: 20px;
+}
+
+.my-properties .property-card-bed-bath-guest-grid>div>p {
+    margin-bottom: 5px;
+}
+
+.my-properties .carousel-inner img {
+    width: 400px;
+    height: 265px;
+}
+
+.my-properties .card-button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-properties .card-text {
+    height: 40px;
+}
+
+@media screen and (max-width: 419px) {
+    .my-properties .comments-btn {
+        margin-top: 10px;
+    }
+}

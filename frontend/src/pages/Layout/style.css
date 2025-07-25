@@ -1,0 +1,70 @@
+.nav-bar-component .container {
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.nav-bar-component .nav-link {
+    font-size: large;
+    font-weight: 400;
+    color: white;
+}
+
+.nav-bar-component .navbar-brand {
+    font-size: large;
+    font-weight: 600;
+    color: white;
+}
+
+nav {
+    align-content: center;
+    background-color: #EC994B;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+    float: left;
+}
+
+.navbar .navbar-nav .dropdown-menu.dropdown-menu-right {
+    float: right !important;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EC994B;
+    margin-top: 20px;
+    height: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-bar-component .card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 0px;
+    margin: 10px;
+    width: 300px;
+}
+
+.dropdown-toggle::after {
+    display: none !important; 
+  }
+
+.dropdown-menu .overflow-y-scroll {
+    height: 400px;
+    overflow-y: scroll;
+    justify-content: center;
+}
+
+.dropdown-menu .overflow-y-scroll #load-more {
+    display: flex;
+    justify-content: center;
+}
+
+
+.empty-notifications {
+    margin-left: 5px;
+    margin-bottom: 0px;
+}

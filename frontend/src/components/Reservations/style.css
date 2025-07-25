@@ -1,0 +1,173 @@
+.property-reservations .all-reservations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.property-reservations .rmsc {
+    --rmsc-main: none;
+    --rmsc-hover: #f1f3f5;
+    --rmsc-selected: #ffffff;
+    --rmsc-border: #ccc;
+    --rmsc-gray: #15133C;
+    --rmsc-bg: #fff;
+    --rmsc-p: 10px; /* Spacing */
+    --rmsc-radius: 4px; /* Radius */
+    --rmsc-h: 38px; /* Height */
+    width: 98%;
+  }
+
+.property-reservations .options-dropdown {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.property-reservations .reservation-container {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-areas: 
+        'image guest guest-val'
+        'image status status-val'
+        'image reservation-start reservation-start-val'
+        'image reservation-end reservation-end-val'
+        'image price price-val'
+        'image property-name property-name-val'
+        'res-btn res-btn res-btn'
+        'expand expand expand';
+    column-gap: 10px;
+    border: rgba(21, 19, 60, 0.2) solid 1px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 1rem;
+    position: relative;
+    background: white;
+    width: 500px;
+}
+
+.property-reservations .pagination {
+    margin: 1rem;
+    --bs-pagination-active-bg: #15133C;
+    --bs-pagination-active-border-color: #15133C;
+    --bs-pagination-color: #15133C;
+    --bs-pagination-hover-color: #15133C;
+    --bs-pagination-focus-color: #15133C;
+}
+
+.property-reservations .reservation-profile-image {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.property-reservations .page-link .active {
+    color: white;
+}
+
+.property-reservations .reservation-profile {
+    grid-area: image;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.property-reservations .status {
+    grid-area: status;
+}
+
+.property-reservations .status-val {
+    grid-area: status-val;
+}
+
+.property-reservations .property-name {
+    grid-area: property-name;
+}
+
+.property-reservations .property-name-val {
+    grid-area: property-name-val
+}
+
+.property-reservations .guest {
+    grid-area: guest;
+}
+
+.property-reservations .guest-val {
+    grid-area: guest-val;
+}
+
+.property-reservations .reservation-start-date {
+    grid-area: reservation-start;
+}
+
+.property-reservations .reservation-start-date-value {
+    grid-area: reservation-start-val
+}
+
+.property-reservations .reservation-end-date {
+    grid-area: reservation-end;
+}
+
+.property-reservations .reservation-end-date-value {
+    grid-area: reservation-end-val
+}
+
+.property-reservations .heading {
+    font-weight: 600;
+}
+
+.property-reservations .res-btn {
+    grid-area: res-btn;
+}
+
+.property-reservations .res-btn .btn {
+    margin-left: 10px;
+}
+
+.property-reservations .price {
+    grid-area: price;
+}
+
+.property-reservations .price-value {
+    grid-area: price-val;
+}
+
+.property-reservations #change-status {
+    grid-area: expand;
+    padding-top: 15px
+}
+
+.property-reservations .confirm-change {
+    margin-top: 10px;
+}
+
+.property-reservations .form-check {
+    margin-bottom: 15px;
+}
+
+.property-reservations .load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 550px) {
+    .property-reservations .reservation-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .property-reservations .res-btn {
+        grid-area: res-btn;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .property-reservations .res-btn .btn {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+}

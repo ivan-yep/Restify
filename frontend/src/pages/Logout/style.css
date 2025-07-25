@@ -1,0 +1,107 @@
+.logout body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #F1EEE9;
+    margin: 0;
+}
+
+.logout main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex: 1;
+}
+
+/* section {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 200px;
+} */
+
+.logout .card {
+    align-self: center;
+    width: 500px;
+}
+
+.logout .row {
+    align-items: center;
+    justify-content: center;
+}
+
+.logout .col {
+    width: 20vw;
+}
+
+.logout #login-form {
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.logout form {
+    width: 300px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+/* div {
+    align-items: center;
+}
+
+input {
+    width: 40vw;
+}
+
+#login-form {
+    align-self: center;
+} */
+
+.logout .rounded-t-5 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+/* @media (min-width: 992px) {
+    .rounded-tr-lg-0 {
+        border-top-right-radius: 0;
+    }
+
+    .rounded-bl-lg-5 {
+        border-bottom-left-radius: 0.5rem;
+    }
+}
+
+.btn-primary {
+    align-self: center;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #EC994B;
+    --bs-btn-border-color: #EC994B;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #15133C;
+    --bs-btn-hover-border-color: #15133C;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #15133C;
+    --bs-btn-active-border-color: #15133C;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #73777B;
+    --bs-btn-disabled-border-color: #73777B;
+    --bs-btn-active-bg: #15133C;
+}
+
+@media screen and (max-width: 550px) {
+    .card {
+        width: 90vw;
+    }
+} */
